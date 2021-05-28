@@ -1,4 +1,8 @@
-jQuery(document).on( 'wbk_on_form_rendered', function(){
+function wbk_on_form_rendered( service ){
     jQuery('#wbk-book-quantity').find('option').remove();
-    jQuery('#wbk-book-quantity').html('<option value="1">1</option><option value="2">2</option>'); 
-});
+    var options = '';
+    for( var i = 1; i <= 30; i++ ){
+      options += '<option value='+ i  + '>' + i + '</option>';
+    }
+	jQuery('#wbk-book-quantity').html(options);
+}
