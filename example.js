@@ -1,5 +1,5 @@
 jQuery(document).on( 'wbk_on_form_rendered', function(){
-    const limit = 2;
+    const limit = 4;
     jQuery('.wbk-book-quantity').find('option').remove();
     var options = '';
     for( var i = 1; i <= limit; i++ ){
